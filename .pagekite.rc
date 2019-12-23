@@ -1,0 +1,24 @@
+###[ Current settings for pagekite.py v1.0.0.190225. ]#########
+#
+## NOTE: This file may be rewritten/reordered by pagekite.py.
+#
+
+##[ Default kite and account details ]##
+kitename   = cvar1984.pagekite.me
+kitesecret = 28a7fka847a49b42xxc876z7azx8k632
+
+##[ Front-end settings: use pagekite.net defaults ]##
+defaults
+
+##[ Back-ends and local services ]##
+service_on  = http:@kitename                   : localhost:8080      : @kitesecret
+
+
+
+
+
+##[ Miscellaneous settings ]##
+savefile = /data/data/com.termux/files/home/.pagekite.rc
+
+###[ End of pagekite.py configuration ]#########
+END

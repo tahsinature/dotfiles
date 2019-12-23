@@ -1,0 +1,6 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
+blackholesecurity.github.io	0	0	1577100885	31556952
+raw.githubusercontent.com	0	0	1577117970	31536000
+github.com	0	1	1576850396	31536000
