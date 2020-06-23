@@ -8,8 +8,12 @@ alias l='ls --color=auto'
 alias la='ls --color=auto -a'
 alias grep='grep --color=auto'
 alias cls='clear'
+alias open='termux-open'
+alias send='termux-open --send'
+alias copy='termux-clipboard-set'
+alias paste='termux-clipboard-get'
 
-alias fbig="find . -size +128M -type f -printf '%s %p\n'| sort -nr | head -16"
+alias fbig="find . -type f -printf '%s %p\n'| sort -nr | head -16"
 alias rdir='mkdir -p ./$(cat /dev/urandom | tr -cd 'a-z0-9' | head -c 8)/$(cat /dev/urandom | tr -cd 'a-z0-9' | head -c 4)/'
 
 export HISTCONTROL=ignoredups:erasedups
