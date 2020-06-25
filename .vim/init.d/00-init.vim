@@ -5,7 +5,7 @@
 " Last Modified Date: 25.06.2020
 " Last Modified By  : Cvar1984 <gedzsarjuncomuniti@gmail.com>
 
-let vimplug_exists=expand('~/.config/nvim/autoload/plug.vim')
+let vimplug_exists=expand('~/.vim/autoload/plug.vim')
 
 if !filereadable(vimplug_exists)
   if !executable("curl")
