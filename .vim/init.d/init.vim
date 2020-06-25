@@ -33,6 +33,14 @@ call plug#begin(expand('~/storage/external-1/nvim/plugged'))
 "Plug 'mattn/emmet-vim'
 "Plug 'tpope/vim-fugitive'
 "Plug 'scrooloose/syntastic'
+"Plug 'shougo/neco-vim'
+"Plug 'prabirshrestha/asyncomplete.vim'
+"Plug 'prabirshrestha/async.vim'
+"Plug 'prabirshrestha/vim-lsp'
+"Plug 'prabirshrestha/asyncomplete-lsp.vim'
+"Plug 'prabirshrestha/asyncomplete-necovim.vim'
+"Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
+
 Plug 'vim-scripts/loremipsum'
 Plug 'lumiliet/vim-twig'
 Plug 'Yggdroot/indentLine'
