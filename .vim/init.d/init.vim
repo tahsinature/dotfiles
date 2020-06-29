@@ -1,8 +1,8 @@
 " Copyright (c) 2020 Ramdhan Firmansyah
-" File              : 00-init.vim
+" File              : init.vim
 " Author            : Cvar1984 <gedzsarjuncomuniti@gmail.com>
 " Date              : 25.06.2020
-" Last Modified Date: 25.06.2020
+" Last Modified Date: 29.06.2020
 " Last Modified By  : Cvar1984 <gedzsarjuncomuniti@gmail.com>
 
 let vimplug_exists=expand('~/.vim/autoload/plug.vim')
@@ -20,32 +20,34 @@ if !filereadable(vimplug_exists)
 endif
 call plug#begin(expand('~/storage/external-1/nvim/plugged'))
 
-"Plug 'scrooloose/nerdtree'
-"Plug 'jistr/vim-nerdtree-tabs'
-"Plug 'tpope/vim-commentary'
-"Plug 'vim-airline/vim-airline-themes'
-"Plug 'vim-scripts/grep.vim'
-"Plug 'vim-scripts/CSApprox'
-"Plug 'Raimondi/delimitMate'
-"Plug 'majutsushi/tagbar'
-"Plug 'avelino/vim-bootstrap-updater'
-"Plug 'sheerun/vim-polyglot'
-"Plug 'mattn/emmet-vim'
-"Plug 'tpope/vim-fugitive'
-"Plug 'scrooloose/syntastic'
-"Plug 'shougo/neco-vim'
-"Plug 'prabirshrestha/asyncomplete.vim'
-"Plug 'prabirshrestha/async.vim'
-"Plug 'prabirshrestha/vim-lsp'
-"Plug 'prabirshrestha/asyncomplete-lsp.vim'
-"Plug 'prabirshrestha/asyncomplete-necovim.vim'
-"Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
+" Plug 'scrooloose/nerdtree'
+" Plug 'jistr/vim-nerdtree-tabs'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-scripts/grep.vim'
+" Plug 'vim-scripts/CSApprox'
+" Plug 'Raimondi/delimitMate'
+" Plug 'majutsushi/tagbar'
+" Plug 'avelino/vim-bootstrap-updater'
+" Plug 'sheerun/vim-polyglot'
+" Plug 'mattn/emmet-vim'
+" Plug 'tpope/vim-fugitive'
+" Plug 'scrooloose/syntastic'
+" Plug 'shougo/neco-vim'
+" Plug 'prabirshrestha/asyncomplete.vim'
+" Plug 'prabirshrestha/async.vim'
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'prabirshrestha/asyncomplete-lsp.vim'
+" Plug 'prabirshrestha/asyncomplete-necovim.vim'
+" Plug 'felixfbecker/php-language-server', { 'do': 'composer install && composer run-script parse-stubs' }
+" Plug 'vim-scripts/taglist.vim' BUG
 
-Plug 'vim-scripts/loremipsum'
-Plug 'lumiliet/vim-twig'
-Plug 'Yggdroot/indentLine'
-Plug 'maximbaz/lightline-ale'
 Plug 'dense-analysis/ale'
+Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-commentary'
+Plug 'vim-scripts/loremipsum'
+Plug 'maximbaz/lightline-ale'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 Plug 'itchyny/lightline.vim'
@@ -55,9 +57,12 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'alpertuna/vim-header'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'connorholyday/vim-snazzy'
+Plug 'lumiliet/vim-twig'
+Plug 'othree/html5.vim'
+Plug 'tobyS/pdv'
+Plug 'tobyS/vmustache'
 call plug#end()
 
 colorscheme snazzy
