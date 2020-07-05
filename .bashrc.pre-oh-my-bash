@@ -19,10 +19,12 @@ export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 export PATH=/data/data/com.termux/files/home/.local/bin:/data/data/com.termux/files/usr/local/bin:$PATH
-export LD_LIBRARY_PATH=${PREFIX}/local/lib:${HOME}/.local/lib:${PREFIX}/lib
+export LD_LIBRARY_PATH=${PREFIX}/local/lib:${HOME}/.local/lib
 shopt -s histappend
 shopt -s checkwinsize
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
-eval "$(gh completion -s bash)"
+if [ -f $(which gh) ]; then
+    eval "$(gh completion -s bash)"
+fi

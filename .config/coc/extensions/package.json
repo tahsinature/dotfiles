@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "coc-json": ">=1.2.6",
+    "coc-marketplace": ">=1.7.0",
+    "coc-neosnippet": ">=1.2.2",
+    "coc-pairs": ">=1.2.21",
+    "coc-phpls": ">=2.1.8",
+    "coc-yank": ">=1.1.4"
+  }
+}
