@@ -21,8 +21,8 @@ endif
 call plug#begin(expand('~/storage/external-1/nvim/plugged'))
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'maximbaz/lightline-ale'
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
+" Plug 'Shougo/neosnippet.vim'
+" Plug 'Shougo/neosnippet-snippets'
 Plug 'itchyny/lightline.vim'
 Plug 'dense-analysis/ale'
 Plug 'Yggdroot/indentLine'
@@ -50,7 +50,7 @@ nnoremap tt :tabnew<CR>
 nnoremap tc :tabclose<CR>
 nnoremap tn :tabnext<CR>
 nnoremap tp :tabprev<CR>
-"set cursorline
+" set cursorline
 set guifont=Monospace\ 10
 set fillchars+=vert:\$
 syntax enable
@@ -85,3 +85,4 @@ if exists('$SHELL')
 else
     set shell=/bin/sh
 endif
+set foldmethod=marker
